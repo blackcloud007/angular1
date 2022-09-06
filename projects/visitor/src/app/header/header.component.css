@@ -1,0 +1,11 @@
+header{
+    display: flex;
+    background-color:aquamarine;
+    height:12vh;
+   justify-content: space-between;
+   align-items: center;
+}
+ul li{
+    display: inline;
+    padding: 10px;
+}

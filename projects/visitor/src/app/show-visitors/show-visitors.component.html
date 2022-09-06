@@ -1,0 +1,21 @@
+<div class="registerd-visitors">
+    <span style="background-color: skyblue; padding: 10px;">Registerd Visitors</span>
+    <div *ngFor="let v of visitors" style=" width: 50%; margin:auto;">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Purpose</th>
+                <th>Company</th>
+                <th>Contact Person</th>
+            </tr>
+            <tr>
+                <td>{{v.name}}</td>
+                <td>{{v.mobile}}</td>
+                <td>{{v.purpose}}</td>
+                <td>{{v.company}}</td>
+                <td>{{v.contactperson}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

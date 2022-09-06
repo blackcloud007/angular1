@@ -1,0 +1,19 @@
+<header>
+    SkyView Visitor App
+    <div *ngIf="isLogged; then af; else bf;"></div>
+    <ng-template #af>
+        <ul>
+            <li><a routerLink="/visitor-register">Visitor Registration</a></li>
+            <li><button  on-click="LogoutHandler()">LogOut</button></li>
+        </ul>
+    </ng-template>
+    
+    <ng-template #bf>
+        <ul>
+            <li><button on-click="LoginHandler()">Login</button></li>
+            <li><a on-click="RegisterHandler()">Register</a></li>
+        </ul>
+    </ng-template>
+    
+</header>
+
