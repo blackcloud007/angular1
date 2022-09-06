@@ -9,7 +9,7 @@ export class LoginService {
   currentStatus:string | null=null;
   constructor() { }
   validateLogin(u:User){
-    if(u.username==="aravind" && u.password==="1234"){
+    if(u.username==="1" && u.password==="1"){
       localStorage.setItem('status','loggedin')
     }
   }
